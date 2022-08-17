@@ -1,0 +1,280 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Menu*/
+#menu{
+    background-color: #b63cb0;
+    display: flex;
+    height: 80px;
+}
+
+.logo img{
+    max-width: 200px;
+}
+#menu ul{
+    list-style: none;
+    padding: 20px;
+    padding-top: 25px;
+}
+
+#menu ul li{
+    display: inline;
+    background-color: #b63cb0;
+}
+
+#menu ul li a{
+    color:#ffc60a;
+    text-decoration: none;
+    padding: 20px;
+    transition: 1s;
+}
+
+#menu ul li a:hover{
+    background-color: #b86ab4;
+    border-radius: 30px;
+}
+/*Estilizando H1 e Img*/
+.container{
+    display: flex;
+    align-items: center;
+    background-color: #e9abe6;
+}
+.container h1{
+    color: #ff7300;
+}
+.container img{
+    background-color: #e9abe6;
+    border-radius: 100px;
+    max-height: 150px;
+}
+
+/*Sobre*/
+.txt{
+    margin-top: 30px;
+    line-height: 25px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+.txt p{
+    padding: 20px;
+    display: block;
+    text-align: justify;
+}
+.ttl{
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #ff7300;
+    text-align: center;
+}
+
+.equipe{
+    display: flex;
+    justify-content: space-around;
+    width: 33.33%;
+}
+.equipeimg img{
+    border-radius: 100%;
+    border: 2px solid  #ee82ee;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+.equipeimg img:hover{
+    opacity: 0.5;
+}
+.equipeimg:hover{
+    color: #f06d16;
+}
+
+.equipeimg figcaption{
+    text-align: center;
+    padding: 10px;
+}
+.equipeimg{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+/*Loja*/
+/*Border-collapse tira a borda dupla da Tabela*/
+#loja{
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+#loja td, #loja th{
+    border: 2px solid  #ee82ee;
+}
+
+#loja td{
+    padding: 20px;
+}
+
+#loja img{
+    max-width: 110px;
+    height: 100px;
+}
+
+#loja td:hover{
+    background-color: #e6b0e6;
+}
+
+#loja th{
+    padding: 15px 20px;
+    background-color:#ee82ee;
+    color:#fff;
+}
+
+.lgd{
+    font-size: 14px;
+    padding: 8px;
+}
+
+.topo{
+    border: 2px solid #ee82ee;
+    border-radius: 50px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.topo img{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+.topo a img:hover{
+    opacity: 0.5;
+}
+
+
+/*Estilização Formulario*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d998df;
+    width: 600px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/*Outline tira a linha do input*/
+form input, form textarea,form select{
+    outline: unset;
+    padding: 10px;
+    width: 350px;
+    border: 1px solid #641c64;
+    border-radius: 10px;
+}
+
+form input:focus, form textarea:focus{
+    background-color: #f1dbf3;
+}
+
+form input[type=submit]:hover{
+    color: #ff7300;
+    cursor: pointer;
+    background-color: #883b88;
+}
+
+form select:hover{
+    cursor: pointer;
+    background-color: #f1dbf3;
+}
+
+form input[type=submit]{
+    font-size: 15px;
+}
+
+form label{
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+form input[type=checkbox]{
+    padding: 20px;
+}
+
+label strong{
+    color:#f06d16;
+}
+
+
+/*Estilização Adoção*/
+#adocao{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+#adocao td, #adocao th{
+    border: 2px solid  #ee82ee;
+    text-align: center;
+}
+
+#adocao th{
+    padding: 15px;
+    background-color: #ee82ee;
+    color: #fff;
+}
+
+#adocao td img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+#adocao td p{
+    margin: 10px;
+    margin-top: 0;
+}
+
+#adocao td p strong{
+    color: #f06d16;
+}
+
+#adocao td:hover{
+    background-color: #e6b0e6;
+}
+
+
+/*Rodapé*/
+footer{
+    background-color: #e9abe6;
+    color: #fff;
+    margin-top: 30px;
+}
+footer h3, footer p strong{
+    color:#f06d16;
+}
+footer p{
+    margin-top: 15px;
+    line-height: 25px;
+}
+.rod{
+    padding: 30px;
+    display: flex;
+}
+.drt{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
